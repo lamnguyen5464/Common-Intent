@@ -1,4 +1,4 @@
-package com.example.commonintent;
+package com.example.commonintent.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.commonintent.R;
 import com.example.commonintent.helpers.ContactHelper;
 
 public class MainActivity2 extends AppCompatActivity implements View.OnClickListener {
