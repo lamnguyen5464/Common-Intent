@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DemoClass</string>
+    <string name="search_key_place_holder">Enter search key here</string>
+    <string name="tag_query_place_holder">Tag your query</string>
+    <string name="bt_save">Save</string>
+    <string name="bt_clear_tag">Clear tag</string>
+    <string name="tagged_search">Tagged searches</string>
+</resources>
