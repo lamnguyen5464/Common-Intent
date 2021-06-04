@@ -9,12 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CommonIntent">
-        <activity android:name=".activities.MainActivity2">
+        <activity android:name=".activities.Main2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".activities.EmailActivity">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.SEND" />-->
+            <!--                <data android:type="*/*" />-->
+            <!--                <category android:name="android.intent.category.DEFAULT" />-->
+            <!--            </intent-filter>-->
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+                <data android:scheme="mailto" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.RESERVE_TAXI_RESERVATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.ContactActivity">
+
         </activity>
     </application>
 

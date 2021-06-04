@@ -3,27 +3,31 @@ package com.example.commonintent.activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.commonintent.R;
 import com.example.commonintent.helpers.ContactHelper;
 
-public class MainActivity2 extends AppCompatActivity implements View.OnClickListener {
+public class ContactActivity extends AppCompatActivity implements View.OnClickListener {
+    Button btSelectContact;
+    TextView resultTxt;
 
+
+    private void mapping(){
+        btSelectContact = findViewById(R.id.btSelectConact);
+        btSelectContact.setOnClickListener(this);
+        resultTxt = findViewById(R.id.resultTxt);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2_main);
-
-        Button btSelectContact = findViewById(R.id.btSelectConact);
-        btSelectContact.setOnClickListener(this);
+        setContentView(R.layout.activity_contact);
+        mapping();
 
     }
 
@@ -35,7 +39,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
         }
         switch (requestCode){
             case ContactHelper.REQUEST_SELECT_CONTACT:
-                ContactHelper.handleOnReturn(this, data);
+                ContactHelper.handleOnReturn(this, data, resultTxt);
                 break;
             default:
         }

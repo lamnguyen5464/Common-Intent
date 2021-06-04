@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.commonintent.constant.IntentTypes;
@@ -21,17 +22,25 @@ public class ContactHelper {
         }
     }
 
-    public static void handleOnReturn(Activity activity, Intent data) {
+    public static void handleOnReturn(Activity activity, Intent data, TextView resultTxt) {
         Uri contactUri = data.getData();
         String[] projection = new String[]{ContactsContract.CommonDataKinds.Phone.NUMBER};
         Cursor cursor = activity.getContentResolver().query(contactUri, projection,
                 null, null, null);
-        // If the cursor returned is valid, get the phone number
         if (cursor != null && cursor.moveToFirst()) {
             int numberIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
             String number = cursor.getString(numberIndex);
-            Log.d("@@@", "phone number: " + number);
-            Toast.makeText(activity, "You chose phone number: " + number, Toast.LENGTH_LONG);
+            resultTxt.setText("You choose: " + number);
+            viewContact(activity, contactUri);
         }
     }
+
+    public static void viewContact(Activity activity, Uri contactUri) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, contactUri);
+        if (intent.resolveActivity(activity.getPackageManager()) != null) {
+            Log.d("@@", contactUri.getPath());
+            activity.startActivity(intent);
+        }
+    }
+
 }
