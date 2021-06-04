@@ -30,7 +30,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
                 startActivity(new Intent(this, EmailActivity.class));
                 break;
             case R.id.btUseStorage:
-                startActivity(new Intent(this, ContactActivity.class));
+                startActivity(new Intent(this, FileStorageActivity.class));
                 break;
         }
     }
