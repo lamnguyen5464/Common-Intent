@@ -10,13 +10,13 @@ import android.widget.Toast;
 import com.example.commonintent.R;
 import com.google.android.gms.actions.ReserveIntents;
 
-public class MainActivity7 extends AppCompatActivity implements View.OnClickListener {
+public class LocalActionActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_7_main);
+        setContentView(R.layout.activity_local_action);
 
         Button btCallACar = findViewById(R.id.btCallACar);
         btCallACar.setOnClickListener(this);

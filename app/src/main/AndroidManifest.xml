@@ -14,7 +14,7 @@
 
         </activity>
 
-        <activity android:name=".activities.MainActivity7">
+        <activity android:name=".activities.LocalActionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.MainActivity8">
+        <activity android:name=".activities.MapActivity">
 
 
             <intent-filter>
@@ -37,7 +37,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.MainActivity9">
+        <activity android:name=".activities.MusicOrVideoActivity">
 
             <intent-filter android:scheme="http"
                 tools:ignore="AppLinkUrlError">

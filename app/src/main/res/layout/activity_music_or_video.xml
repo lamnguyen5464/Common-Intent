@@ -4,15 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".activities.MainActivity7">
+    tools:context=".activities.MusicOrVideoActivity">
 
     <Button
-        android:id="@+id/btCallACar"
+        android:id="@+id/btPlayMediaFile"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Call a taxi"
+        android:text="Play media file"
         android:onClick="onClick"
         />
 

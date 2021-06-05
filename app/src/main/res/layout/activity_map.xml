@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".activities.MainActivity8">
+    tools:context=".activities.MapActivity">
 
     <Button
         android:id="@+id/btMapLocation"

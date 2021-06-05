@@ -11,16 +11,16 @@ import android.widget.Toast;
 import com.example.commonintent.R;
 
 
-public class MainActivity8 extends AppCompatActivity implements View.OnClickListener {
+public class MusicOrVideoActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_8_main);
+        setContentView(R.layout.activity_music_or_video);
 
-        Button btMapLocation = findViewById(R.id.btMapLocation);
-        btMapLocation.setOnClickListener(this);
+        Button btPlayMediaFile = findViewById(R.id.btPlayMediaFile);
+        btPlayMediaFile.setOnClickListener(this);
 
     }
 
@@ -28,17 +28,17 @@ public class MainActivity8 extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btMapLocation:
-                mapLocation(Uri.parse("geo:47.6,-122.3"));
+            case R.id.btPlayMediaFile:
+                playMedia(Uri.parse("https://www.youtube.com/watch?v=y83x7MgzWOA&list=RDy83x7MgzWOA&start_radio=1"));
                 break;
             default:
                 Toast.makeText(this, "This button has not been handled", Toast.LENGTH_SHORT).show();
         }
     }
 
-    public void mapLocation(Uri geoLocation) {
+    public void playMedia(Uri file) {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(geoLocation);
+        intent.setData(file);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
