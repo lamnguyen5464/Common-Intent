@@ -39,7 +39,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btUseStorage:
                 startActivity(new Intent(this, FileStorageActivity.class));
                 break;
-<<<<<<< HEAD
             case R.id.btUseLocation:
                 startActivity(new Intent(this, LocalActionActivity.class));
                 break;
@@ -48,7 +47,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btUsePlayMediaFile:
                 startActivity(new Intent(this, MusicOrVideoActivity.class));
-=======
             case R.id.btUseAlarm:
                 startActivity(new Intent(this, AlarmClockActivity.class));
                 break;
@@ -66,7 +64,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnPhone:
                 startActivity(new Intent(this, PhoneActivity.class));
->>>>>>> intent/dev_main
                 break;
         }
     }

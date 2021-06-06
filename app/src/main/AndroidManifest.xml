@@ -13,7 +13,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CommonIntent">
-<<<<<<< HEAD
 
 
         <activity android:name=".activities.LocalActionActivity">
@@ -27,11 +26,9 @@
             android:exported="true"
             android:grantUriPermissions="true"
             android:permission="android.permission.MANAGE_DOCUMENTS">
-=======
         <activity android:name=".activities.PhoneActivity">
         </activity>
         <activity android:name=".activities.SearchActivity" >
->>>>>>> intent/dev_main
             <intent-filter>
                 <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
                 <category android:name="android.intent.category.DEFAULT"/>
