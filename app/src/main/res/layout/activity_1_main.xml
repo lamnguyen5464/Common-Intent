@@ -4,34 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.Main2Activity">
+    tools:context=".activities.Main1Activity">
 
     <Button
-        android:id="@+id/btUseContact"
+        android:id="@+id/btUseAlarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Use contact intent"
+        android:text="Use alarm intent"
         android:layout_marginTop="8dp"
         />
 
     <Button
-        android:id="@+id/btUseEmail"
+        android:id="@+id/btUseCalendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Use email intent"
-        android:layout_below="@+id/btUseContact"
+        android:text="Use caldendar intent"
+        android:layout_below="@+id/btUseAlarm"
         android:layout_marginTop="8dp"
     />
 
     <Button
-        android:id="@+id/btUseStorage"
+        android:id="@+id/btUseCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Use storage intent"
-        android:layout_below="@+id/btUseEmail"
+        android:text="Use camera intent"
+        android:layout_below="@+id/btUseCalendar"
         android:layout_marginTop="8dp"
         />
 
