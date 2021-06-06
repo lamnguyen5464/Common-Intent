@@ -68,6 +68,34 @@
                 android:text="Use phone intent"
                 android:layout_marginTop="8dp"
                 />
+            <Button
+                android:id="@+id/btUseAlarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/btUseContact"
+                android:text="Use alarm intent"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:id="@+id/btUseCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use caldendar intent"
+                android:layout_below="@+id/btUseAlarm"
+                android:layout_marginTop="8dp"
+                />
+            <Button
+                android:id="@+id/btUseCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use camera intent"
+                android:layout_below="@+id/btUseCalendar"
+                android:layout_marginTop="8dp"
+                />
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
