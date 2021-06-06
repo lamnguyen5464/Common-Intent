@@ -8,12 +8,12 @@ import android.view.View;
 
 import com.example.commonintent.R;
 
-public class Main2Activity extends AppCompatActivity implements View.OnClickListener {
+public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2_main);
+        setContentView(R.layout.activity_menu);
 
         findViewById(R.id.btUseContact).setOnClickListener(this);
         findViewById(R.id.btUseEmail).setOnClickListener(this);
