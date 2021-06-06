@@ -25,6 +25,10 @@
 
         <activity android:name=".activities.SearchActivity" >
             <intent-filter>
+        <activity android:name=".activities.PhoneActivity">
+        </activity>
+        <activity android:name=".activities.SearchActivity" >
+            <intent-filter>
                 <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
@@ -68,6 +72,15 @@
                 <data android:mimeType="audio/*" />
                 <data android:mimeType="application/ogg" />
                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.FileStorageActivity"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:permission="android.permission.MANAGE_DOCUMENTS">
+            <intent-filter>
+                <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </activity>
         <activity
