@@ -6,14 +6,26 @@
     android:layout_height="match_parent">
 
     <Button
-        android:onClick="onClick"
         android:id="@+id/btMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Text Message"
+        android:onClick="onClick"
+        android:text="Send Message Hello To..."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.458" />
+
+    <!--<EditText
+        android:id="@+id/inputText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Message"
+        app:layout_constraintBottom_toTopOf="@+id/btMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
