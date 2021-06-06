@@ -19,6 +19,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:text="Use contact intent"
+                android:layout_below="@+id/btUseEmail"
                 android:layout_marginTop="8dp"
                 />
 
@@ -28,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:text="Use email intent"
-                android:layout_below="@+id/btUseContact"
+                android:layout_below="@+id/btUseStorage"
                 android:layout_marginTop="8dp"
                 />
 
@@ -38,7 +39,33 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:text="Use storage intent"
-                android:layout_below="@+id/btUseEmail"
+                android:layout_below="@+id/btnNote"
+                android:layout_marginTop="8dp"
+                />
+            <Button
+                android:id="@+id/btnNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use note intent"
+                android:layout_below="@+id/btnSearch"
+                android:layout_marginTop="8dp"
+                />
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use search intent"
+                android:layout_below="@+id/btnPhone"
+                android:layout_marginTop="8dp"
+                />
+            <Button
+                android:id="@+id/btnPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use phone intent"
                 android:layout_marginTop="8dp"
                 />
         </RelativeLayout>
