@@ -1,4 +1,4 @@
-package com.example.commonintent;
+package com.example.commonintent.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.commonintent.R;
 import com.google.android.gms.actions.NoteIntents;
 
 public class PhoneActivity extends AppCompatActivity {
@@ -25,7 +26,8 @@ public class PhoneActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dialPhoneNumber("0966509907");
+                EditText t = (EditText) findViewById(R.id.phoneText);
+                dialPhoneNumber(t.getText().toString());
             }
         });
     }

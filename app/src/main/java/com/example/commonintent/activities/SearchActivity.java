@@ -1,4 +1,4 @@
-package com.example.commonintent;
+package com.example.commonintent.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.commonintent.R;
 
 public class SearchActivity extends AppCompatActivity {
 

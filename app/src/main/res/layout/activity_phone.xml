@@ -4,7 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PhoneActivity">
+    tools:context=".activities.PhoneActivity"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:id="@+id/phoneText"
+        ></EditText>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

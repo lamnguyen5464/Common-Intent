@@ -9,22 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CommonIntent">
-        <activity android:name=".PhoneActivity">
+        <activity android:name=".activities.PhoneActivity">
         </activity>
-        <activity android:name=".SearchActivity" >
+        <activity android:name=".activities.SearchActivity" >
             <intent-filter>
                 <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".NoteActivity" >
+        <activity android:name=".activities.NoteActivity" >
             <intent-filter>
                 <action android:name="com.google.android.gms.actions.CREATE_NOTE" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="*/*" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".activities.MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,6 +33,27 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".activities.EmailActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.SEND" /> -->
+            <!-- <data android:type="*/*" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- </intent-filter> -->
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <data android:scheme="mailto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.RESERVE_TAXI_RESERVATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.ContactActivity"></activity>
     </application>
 
 </manifest>
