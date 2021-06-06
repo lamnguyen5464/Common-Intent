@@ -18,6 +18,13 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btUseContact).setOnClickListener(this);
         findViewById(R.id.btUseEmail).setOnClickListener(this);
         findViewById(R.id.btUseStorage).setOnClickListener(this);
+        findViewById(R.id.btUseAlarm).setOnClickListener(this);
+        findViewById(R.id.btUseCalendar).setOnClickListener(this);
+        findViewById(R.id.btUseCamera).setOnClickListener(this);
+
+        findViewById(R.id.btnNote).setOnClickListener(this);
+        findViewById(R.id.btnSearch).setOnClickListener(this);
+        findViewById(R.id.btnPhone).setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +39,7 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btUseStorage:
                 startActivity(new Intent(this, FileStorageActivity.class));
                 break;
+<<<<<<< HEAD
             case R.id.btUseLocation:
                 startActivity(new Intent(this, LocalActionActivity.class));
                 break;
@@ -40,6 +48,25 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btUsePlayMediaFile:
                 startActivity(new Intent(this, MusicOrVideoActivity.class));
+=======
+            case R.id.btUseAlarm:
+                startActivity(new Intent(this, AlarmClockActivity.class));
+                break;
+            case R.id.btUseCalendar:
+                startActivity(new Intent(this, CalendarActivity.class));
+                break;
+            case R.id.btUseCamera:
+                startActivity(new Intent(this, CameraActivity.class));
+                break;
+            case R.id.btnNote:
+                startActivity(new Intent(this, NoteActivity.class));
+                break;
+            case R.id.btnSearch:
+                startActivity(new Intent(this, SearchActivity.class));
+                break;
+            case R.id.btnPhone:
+                startActivity(new Intent(this, PhoneActivity.class));
+>>>>>>> intent/dev_main
                 break;
         }
     }
