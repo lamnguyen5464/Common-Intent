@@ -35,4 +35,33 @@
         android:layout_marginTop="8dp"
         />
 
+    <Button
+        android:id="@+id/btUseSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Use settings intent"
+        android:layout_below="@+id/btUseStorage"
+        android:layout_marginTop="8dp"
+        />
+
+    <Button
+        android:id="@+id/btUseTextMassage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Use Text Message intent"
+        android:layout_below="@+id/btUseSettings"
+        android:layout_marginTop="8dp"
+        />
+
+    <Button
+        android:id="@+id/btUseWebBrowser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Use Web Browser intent"
+        android:layout_below="@+id/btUseTextMassage"
+        android:layout_marginTop="8dp"
+        />
 </RelativeLayout>

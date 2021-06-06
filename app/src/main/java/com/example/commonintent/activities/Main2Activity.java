@@ -18,6 +18,9 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         findViewById(R.id.btUseContact).setOnClickListener(this);
         findViewById(R.id.btUseEmail).setOnClickListener(this);
         findViewById(R.id.btUseStorage).setOnClickListener(this);
+        findViewById(R.id.btUseSettings).setOnClickListener(this);
+        findViewById(R.id.btUseTextMassage).setOnClickListener(this);
+        findViewById(R.id.btUseWebBrowser).setOnClickListener(this);
     }
 
     @Override
@@ -31,6 +34,15 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.btUseStorage:
                 startActivity(new Intent(this, FileStorageActivity.class));
+                break;
+            case R.id.btUseSettings:
+                startActivity(new Intent(this, SettingActivity.class));
+                break;
+            case R.id.btUseTextMassage:
+                startActivity(new Intent(this, TextMessageActivity.class));
+                break;
+            case R.id.btUseWebBrowser:
+                startActivity(new Intent(this, WebBrowserActivity.class));
                 break;
         }
     }
