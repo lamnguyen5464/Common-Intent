@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btUseContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use contact intent"
+                android:layout_below="@+id/btUseEmail"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:id="@+id/btUseEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use email intent"
+                android:layout_below="@+id/btUseStorage"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:id="@+id/btUseStorage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use storage intent"
+                android:layout_below="@+id/btnNote"
+                android:layout_marginTop="8dp"
+                />
+            <Button
+                android:id="@+id/btnNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use note intent"
+                android:layout_below="@+id/btnSearch"
+                android:layout_marginTop="8dp"
+                />
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use search intent"
+                android:layout_below="@+id/btnPhone"
+                android:layout_marginTop="8dp"
+                />
+            <Button
+                android:id="@+id/btnPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use phone intent"
+                android:layout_marginTop="8dp"
+                />
+            <Button
+                android:id="@+id/btUseAlarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/btUseContact"
+                android:text="Use alarm intent"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:id="@+id/btUseCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use caldendar intent"
+                android:layout_below="@+id/btUseAlarm"
+                android:layout_marginTop="8dp"
+                />
+            <Button
+                android:id="@+id/btUseCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use camera intent"
+                android:layout_below="@+id/btUseCalendar"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:id="@+id/btUseLocation"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use location intent"
+                android:layout_below="@+id/btUseCamera"
+                android:onClick="onClick"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:id="@+id/btUseMap"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usw map intent"
+                android:layout_below="@+id/btUseLocation"
+                android:onClick="onClick"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:id="@+id/btUsePlayMediaFile"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use media file intent"
+                android:layout_below="@+id/btUseMap"
+                android:onClick="onClick"
+                android:layout_marginTop="8dp"
+                />
+            <Button
+                android:id="@+id/btUseSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use settings intent"
+                android:layout_below="@+id/btUsePlayMediaFile"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:id="@+id/btUseTextMassage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use Text Message intent"
+                android:layout_below="@+id/btUseSettings"
+                android:layout_marginTop="8dp"
+                />
+
+            <Button
+                android:id="@+id/btUseWebBrowser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Use Web Browser intent"
+                android:layout_below="@+id/btUseTextMassage"
+                android:layout_marginTop="8dp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activities.CalendarActivity">
+
+
+    <EditText
+        android:id="@+id/inputTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@+id/duration"
+        android:hint="Input event title"
+        />
+
+<LinearLayout
+    android:id="@+id/duration"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/inputLocation"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="8dp">
+    <EditText
+        android:id="@+id/inputDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Event duration (from now)"
+        android:inputType="number"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/inputDuration"
+        android:text="hrs"
+        />
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/inputLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btSetCalendar"
+        android:layout_marginBottom="8dp"
+        android:hint="Input event location"
+        />
+
+    <Button
+        android:id="@+id/btSetCalendar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Instant Event"
+        android:onClick="onClick"
+        />
+
+    <TextView
+        android:id="@+id/resultMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/btSetCalendar"
+        />
+
+
+</RelativeLayout>
