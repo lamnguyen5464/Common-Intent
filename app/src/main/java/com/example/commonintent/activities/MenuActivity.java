@@ -43,6 +43,14 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btUseStorage:
                 startActivity(new Intent(this, FileStorageActivity.class));
                 break;
+            case R.id.btUseLocation:
+                startActivity(new Intent(this, LocalActionActivity.class));
+                break;
+            case R.id.btUseMap:
+                startActivity(new Intent(this, MapActivity.class));
+                break;
+            case R.id.btUsePlayMediaFile:
+                startActivity(new Intent(this, MusicOrVideoActivity.class));
             case R.id.btUseAlarm:
                 startActivity(new Intent(this, AlarmClockActivity.class));
                 break;
