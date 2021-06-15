@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +15,7 @@ import com.example.commonintent.R;
 
 public class TextMessageActivity extends AppCompatActivity implements View.OnClickListener {
     Button btMessage;
-    /*TextView message;
+/*    EditText message;
     String sMessage;*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,7 @@ public class TextMessageActivity extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.activity_textmessage);
         btMessage = (Button)findViewById(R.id.btMessage);
         btMessage.setOnClickListener(this);
-        /*message = (TextView)findViewById(R.id.inputText);
+        /*message = findViewById(R.id.inputText);
         sMessage = message.getText().toString();*/
     }
 
@@ -30,7 +31,7 @@ public class TextMessageActivity extends AppCompatActivity implements View.OnCli
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btMessage:
-                composeMmsMessage("Hello", Uri.parse("1"));
+                composeMmsMessage("abc", Uri.parse("1"));
                 break;
         }
     }
