@@ -94,42 +94,6 @@
                 android:layout_centerHorizontal="true"
                 android:text="Use camera intent"
                 android:layout_below="@+id/btUseCalendar"
-<<<<<<< HEAD
-                android:layout_marginTop="8dp"
-                />
-
-            <Button
-                android:id="@+id/btUseLocation"
-                android:layout_centerHorizontal="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Use location intent"
-                android:layout_below="@+id/btUseStorage"
-                android:onClick="onClick"
-                android:layout_marginTop="8dp"
-                />
-
-            <Button
-                android:id="@+id/btUseMap"
-                android:layout_centerHorizontal="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Usw map intent"
-                android:layout_below="@+id/btUseLocation"
-                android:onClick="onClick"
-                android:layout_marginTop="8dp"
-                />
-
-            <Button
-                android:id="@+id/btUsePlayMediaFile"
-                android:layout_centerHorizontal="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Use media file intent"
-                android:layout_below="@+id/btUseMap"
-                android:onClick="onClick"
-=======
->>>>>>> intent/dev_main
                 android:layout_marginTop="8dp"
                 />
         </RelativeLayout>
